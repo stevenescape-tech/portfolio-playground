@@ -1,7 +1,7 @@
 import React, { useCallback } from "react";
 
 const FOOTER_LINKS = [
-  { id: 'case-studies', label: 'product design' },
+  { id: 'case-studies', label: 'case studies' },
   { id: 'other-work', label: 'from my studio' },
   { id: 'about', label: 'about' }
 ];
