@@ -100,16 +100,6 @@ export const HeroImage = () => {
                   {NAV_LABELS[item]}
                 </a>
               ))}
-              <a 
-                href="/steven-trimble-resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`font-['Courier_Prime'] font-bold text-base hover:opacity-80 transition-all ${
-                  isScrolled ? 'text-black' : 'text-white'
-                }`}
-              >
-                resume
-              </a>
               <span className={`font-['Courier_Prime'] text-base transition-all ${
                 isScrolled ? 'text-black' : 'text-white'
               }`}>
@@ -164,14 +154,6 @@ export const HeroImage = () => {
                     {NAV_LABELS[item]}
                   </a>
                 ))}
-                <a 
-                  href="/steven-trimble-resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-['Courier_Prime'] font-bold text-white text-2xl hover:opacity-80 transition-opacity"
-                >
-                  resume
-                </a>
                 <span className="font-['Courier_Prime'] text-white text-xl">
                   713.247.9532
                 </span>
