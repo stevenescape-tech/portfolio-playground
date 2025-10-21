@@ -1,6 +1,5 @@
 {
   "rewrites": [
-    { "source": "/steven-trimble-resume.pdf", "destination": "/steven-trimble-resume.pdf" },
     { "source": "/((?!.*\\.).*)", "destination": "/" }
   ]
 }
