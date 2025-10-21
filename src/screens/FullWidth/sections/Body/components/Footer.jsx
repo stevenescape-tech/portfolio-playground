@@ -3,8 +3,7 @@ import React, { useCallback } from "react";
 const FOOTER_LINKS = [
   { id: 'case-studies', label: 'product design' },
   { id: 'other-work', label: 'from my studio' },
-  { id: 'about', label: 'about' },
-  { id: 'resume', label: 'resume' }
+  { id: 'about', label: 'about' }
 ];
 
 export const Footer = () => {
@@ -52,6 +51,14 @@ export const Footer = () => {
           {label}
         </a>
       ))}
+      <a 
+        href="/steven-trimble-resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="font-['Courier_Prime'] font-bold text-black text-base hover:opacity-70 transition-opacity"
+      >
+        resume
+      </a>
       <span className="font-['Courier_Prime'] text-black text-base">
         713.247.9532
       </span>

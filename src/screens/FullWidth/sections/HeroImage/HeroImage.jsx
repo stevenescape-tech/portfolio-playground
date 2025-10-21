@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useCallback } from "react";
 
-const NAV_ITEMS = ['case-studies', 'other-work', 'about', 'resume'];
+const NAV_ITEMS = ['case-studies', 'other-work', 'about'];
 const NAV_LABELS = {
   'case-studies': 'case studies',
   'other-work': 'from my studio',
-  'about': 'about',
-  'resume': 'resume'
+  'about': 'about'
 };
 
 export const HeroImage = () => {
@@ -72,6 +71,9 @@ export const HeroImage = () => {
         backgroundPosition: bgPosition
       }}
     >
+      {isMobile && (
+        <div className="absolute inset-0 bg-black/40 pointer-events-none" />
+      )}
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
       }`}>
@@ -98,6 +100,16 @@ export const HeroImage = () => {
                   {NAV_LABELS[item]}
                 </a>
               ))}
+              <a 
+                href="/steven-trimble-resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`font-['Courier_Prime'] font-bold text-base hover:opacity-80 transition-all ${
+                  isScrolled ? 'text-black' : 'text-white'
+                }`}
+              >
+                resume
+              </a>
               <span className={`font-['Courier_Prime'] text-base transition-all ${
                 isScrolled ? 'text-black' : 'text-white'
               }`}>
@@ -152,6 +164,14 @@ export const HeroImage = () => {
                     {NAV_LABELS[item]}
                   </a>
                 ))}
+                <a 
+                  href="/steven-trimble-resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-['Courier_Prime'] font-bold text-white text-2xl hover:opacity-80 transition-opacity"
+                >
+                  resume
+                </a>
                 <span className="font-['Courier_Prime'] text-white text-xl">
                   713.247.9532
                 </span>
@@ -161,7 +181,7 @@ export const HeroImage = () => {
         </div>
       </nav>
 
-      <div className="max-w-[1198px] mx-auto px-[35px]">
+      <div className="max-w-[1198px] mx-auto px-[35px] relative z-10">
         <div className="flex flex-col items-start gap-[35px] pt-[225px] md:pt-[450px] pb-[181px] md:pb-[362px] max-w-[663px]">
           <div className="inline-flex items-center gap-2.5 px-[21px] py-[13px] bg-[#da0000]">
             <h1 className="font-['Helvetica-Bold'] font-bold text-white text-[32px] tracking-[-2.56px]">
